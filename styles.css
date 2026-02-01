@@ -233,7 +233,6 @@ body {
 }
 
 .update-icon {
-    font-size: 3rem;
     margin-bottom: 20px;
     text-align: center;
     display: flex;
@@ -442,10 +441,6 @@ body {
     box-shadow: 0 10px 30px rgba(255, 20, 147, 0.2);
 }
 
-.event-icon {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
 
 .event-card h3 {
     font-size: 1.5rem;
@@ -564,6 +559,70 @@ body {
     font-style: italic;
 }
 
+/* Gallery Section */
+.gallery {
+    padding: 80px 20px;
+    background-color: var(--white);
+}
+
+.gallery-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(255, 20, 147, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.gallery-item-landscape {
+    grid-column: span 2;
+}
+
+.gallery-item-portrait {
+    grid-column: span 1;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 20, 147, 0.2);
+}
+
+.gallery-photo {
+    max-width: 100%;
+    max-height: 600px;
+    width: auto;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-photo {
+    transform: scale(1.02);
+}
+
 .about-button-container {
     text-align: center;
     margin-top: 40px;
@@ -628,6 +687,206 @@ body {
     text-decoration: underline;
 }
 
+/* Registration Page Styles */
+.registration-hero {
+    padding: 120px 20px 60px;
+    background: linear-gradient(135deg, var(--pink-bg) 0%, var(--white) 50%, var(--pink-bg-light) 100%);
+    text-align: center;
+}
+
+.registration-options-section {
+    padding: 80px 20px;
+    background-color: var(--white);
+}
+
+.registration-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+}
+
+.registration-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.registration-card {
+    background: var(--white);
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(255, 20, 147, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid var(--hot-pink);
+}
+
+.registration-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 20, 147, 0.2);
+}
+
+
+.registration-card h3 {
+    font-size: 1.8rem;
+    color: var(--hot-pink);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.registration-price {
+    font-size: 2rem;
+    color: var(--hot-pink-dark);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.registration-description {
+    font-size: 1rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.donation-options {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid var(--pink-bg);
+    text-align: left;
+}
+
+.donation-options p {
+    font-weight: 600;
+    color: var(--hot-pink);
+    margin-bottom: 10px;
+}
+
+.donation-options ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.donation-options li {
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.donation-options li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--hot-pink);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.donation-options a {
+    color: var(--hot-pink);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.donation-options a:hover {
+    color: var(--hot-pink-dark);
+    text-decoration: underline;
+}
+
+.how-to-register {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, var(--pink-bg-light) 0%, var(--white) 100%);
+}
+
+.register-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.step-card {
+    background: var(--white);
+    padding: 30px 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(255, 20, 147, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: var(--hot-pink);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 20px;
+}
+
+.step-card h3 {
+    font-size: 1.3rem;
+    color: var(--hot-pink);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.step-card p {
+    color: var(--text-dark);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.registration-help {
+    padding: 80px 20px;
+    background-color: var(--white);
+}
+
+.help-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+}
+
+.help-content a {
+    color: var(--hot-pink);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.help-content a:hover {
+    color: var(--hot-pink-dark);
+    text-decoration: underline;
+}
+
+.registration-cta {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, var(--pink-bg) 0%, var(--white) 100%);
+    text-align: center;
+}
+
 /* About Page Styles */
 .about-hero {
     padding: 120px 20px 60px;
@@ -661,6 +920,10 @@ body {
     grid-template-columns: 1fr 2fr;
     gap: 50px;
     align-items: start;
+}
+
+.founder-content-spacing {
+    margin-top: 80px;
 }
 
 .founder-image {
@@ -1127,6 +1390,10 @@ body {
         gap: 30px;
     }
 
+    .founder-content-spacing {
+        margin-top: 60px;
+    }
+
     .founder-photo {
         max-width: 280px;
     }
@@ -1251,6 +1518,42 @@ body {
 
     .email-separator {
         margin: 5px 0;
+    }
+
+    .registration-cards {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .register-steps {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .registration-card {
+        padding: 30px 20px;
+    }
+
+    .registration-price {
+        font-size: 1.6rem;
+    }
+
+    .donation-options {
+        text-align: center;
+    }
+
+    .photo-gallery {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .gallery-item-landscape,
+    .gallery-item-portrait {
+        grid-column: span 1;
+    }
+
+    .gallery-photo {
+        max-height: 400px;
     }
 }
 
