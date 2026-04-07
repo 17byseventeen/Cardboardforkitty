@@ -803,6 +803,72 @@ body {
     text-decoration: underline;
 }
 
+.zeffy-register {
+    max-width: 800px;
+    margin: 60px auto 0;
+    padding: 40px 35px;
+    background: linear-gradient(135deg, var(--pink-bg-light) 0%, var(--white) 100%);
+    border-radius: 15px;
+    border: 2px solid var(--hot-pink);
+    text-align: center;
+}
+
+.zeffy-title {
+    font-size: 1.75rem;
+    color: var(--hot-pink);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.zeffy-intro,
+.zeffy-note {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.zeffy-actions {
+    margin-top: 25px;
+}
+
+.zeffy-actions .cta-button {
+    display: inline-block;
+}
+
+.zeffy-note a {
+    color: var(--hot-pink);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.zeffy-note a:hover {
+    text-decoration: underline;
+}
+
+.zeffy-link-text {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    word-break: break-all;
+}
+
+.zeffy-link-text a {
+    color: var(--hot-pink);
+    font-weight: 500;
+}
+
+.step-card p a {
+    color: var(--hot-pink);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.step-card p a:hover {
+    text-decoration: underline;
+}
+
 .how-to-register {
     padding: 80px 20px;
     background: linear-gradient(135deg, var(--pink-bg-light) 0%, var(--white) 100%);
@@ -885,6 +951,16 @@ body {
     padding: 80px 20px;
     background: linear-gradient(135deg, var(--pink-bg) 0%, var(--white) 100%);
     text-align: center;
+}
+
+.registration-cta .cta-text a {
+    color: var(--hot-pink);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.registration-cta .cta-text a:hover {
+    text-decoration: underline;
 }
 
 /* About Page Styles */
